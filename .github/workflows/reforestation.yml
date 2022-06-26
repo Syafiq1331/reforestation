@@ -4,7 +4,7 @@ on:
 
   push:
     branches:
-      - master
+      - main
       
   schedule:
   - cron: "0 1/4 * * *"
@@ -39,3 +39,4 @@ jobs:
           force: true
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
